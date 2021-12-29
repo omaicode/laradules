@@ -1,10 +1,9 @@
 <?php
 
-namespace Botble\PluginGenerator\Providers;
+namespace Omaicode\Laradules\Providers;
 
-use Botble\PluginGenerator\Commands\PluginCreateCommand;
-use Botble\PluginGenerator\Commands\PluginListCommand;
-use Botble\PluginGenerator\Commands\PluginMakeCrudCommand;
+use Omaicode\Laradules\Commands\PluginCreateCommand;
+use Omaicode\Laradules\Commands\PluginListCommand;
 use Illuminate\Support\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider
@@ -14,8 +13,7 @@ class CommandServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 PluginListCommand::class,
-                PluginCreateCommand::class,
-                PluginMakeCrudCommand::class,
+                PluginCreateCommand::class
             ]);
         }
     }
