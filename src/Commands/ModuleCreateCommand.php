@@ -35,7 +35,7 @@ class ModuleCreateCommand extends BaseCommand
             return 1;
         }
 
-        $module = strtolower($this->argument('name'));
+        $module = ucfirst(strtolower($this->argument('name')));
         $location = base_path('modules/'.$module);
 
         if (File::isDirectory($location)) {

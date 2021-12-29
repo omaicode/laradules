@@ -1,9 +1,12 @@
 {
     "name": "{Module}",
-    "namespace": "Modules\\{Module}\\",
-    "provider": "Modules\\{Module}\\Providers\\{Module}ServiceProvider",
-    "author": "N/A",
-    "url": "N/A",
-    "version": "1.0",
-    "description": "The description for module {module}"
+    "namespace": "{Module}",
+    "code": "{-name}",
+    "author": "Bieber Kieu",
+    "url": "https://omaicode.com",
+    "version": "1.0.0",
+    "description": "Made with love by Bieber Kieu",
+    "provider": "\\Modules\\{Module}\\Providers\\{Module}ServiceProvider",
+    "enable": true,
+    "order": 0
 }
