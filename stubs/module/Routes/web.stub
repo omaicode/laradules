@@ -1,0 +1,7 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+Route::group(['prefix' => '{-name}', 'middleware' => 'auth'], function($router) {
+    Route::resource('', '{Name}Controller')->parameters(['' => '{-name}']);
+});

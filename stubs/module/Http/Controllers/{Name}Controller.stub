@@ -1,0 +1,9 @@
+<?php
+namespace Modules\{Module}\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+
+class {Name}Controller extends Controller
+{
+    
+}

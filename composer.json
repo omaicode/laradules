@@ -1,0 +1,34 @@
+{
+    "name": "omaicode/laradules",
+    "description": "Split your features into modules, make it flexible and easy to maintenance.",
+    "keywords": ["laravel", "module"],
+    "type": "library",
+    "require": {
+        "php": "^7.2|^8.0",
+        "illuminate/contracts": "^6.0|^7.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "league/flysystem": "^2.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "src/Helpers/functions.php"
+        ],
+        "psr-4": {
+            "Omaicode\\Laradules\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bieber Kieu",
+            "email": "kieutrongthien@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Omaicode\\Laradules\\Providers\\ModuleServiceProvider"
+            ]
+        }
+    }
+}

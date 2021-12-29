@@ -1,0 +1,27 @@
+<?php
+namespace Modules\{Module}\Providers;
+
+use Omaicode\Laradules\Traits\ProviderTrait;
+use Illuminate\Support\ServiceProvider;
+
+class {Module}ServiceProvider extends ServiceProvider
+{
+    use ProviderTrait;
+
+    public function register()
+    {
+        $this->app->register(RouteServiceProvider::class);
+    }
+
+    public function boot()
+    {
+        $this
+            ->setNamespace('{Module}')
+            ->loadHelpers()
+            ->loadAndPublishConfigurations(['permissions'])
+            ->loadAndPublishViews()
+            ->loadAndPublishTranslations()
+            ->loadMigrations()
+            ->publishAssets();        
+    }
+}
