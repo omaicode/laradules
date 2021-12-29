@@ -18,3 +18,14 @@ To create a module, enter command:
 ```bash
 php artisan laradules:create:module {MODULE NAME}
 ```
+
+This command will create your module inside folder {PROJECT}/modules. Example:
+
+- app
+    - Http
+    - Models
+    - Providers
+    - ...
+- modules
+    - ModuleA
+    - ModuleB
