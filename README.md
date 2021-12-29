@@ -29,3 +29,19 @@ This command will create your module inside folder {PROJECT}/modules. Example:
 - modules
     - ModuleA
     - ModuleB
+
+To show module list, enter command:
+
+```bash
+php artisan laradules:list:module
+```
+LICENSE
+-------
+
+MIT
+
+CREDIT
+------
+
+This is my first public library for Laravel, if it have any bugs just create your issue. I'll update as soon as possible!
+Thanks you for use my libraby.
