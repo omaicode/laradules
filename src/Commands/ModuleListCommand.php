@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\PluginGenerator\Commands;
+namespace Omaicode\Laradules\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 
-class PluginListCommand extends Command
+class ModuleListCommand extends Command
 {
     /**
      * The name and signature of the console command.

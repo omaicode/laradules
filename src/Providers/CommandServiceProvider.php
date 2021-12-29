@@ -2,8 +2,8 @@
 
 namespace Omaicode\Laradules\Providers;
 
-use Omaicode\Laradules\Commands\PluginCreateCommand;
-use Omaicode\Laradules\Commands\PluginListCommand;
+use Omaicode\Laradules\Commands\ModuleCreateCommand;
+use Omaicode\Laradules\Commands\ModuleListCommand;
 use Illuminate\Support\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider
@@ -12,8 +12,8 @@ class CommandServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                PluginListCommand::class,
-                PluginCreateCommand::class
+                ModuleListCommand::class,
+                ModuleCreateCommand::class
             ]);
         }
     }
